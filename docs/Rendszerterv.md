@@ -49,7 +49,15 @@
 
 ## 11. Telepítési terv
 
+A szoftver webes felületéhez csak egy böngésző telepítése szükséges.
 
+**Windows - Microsoft Edge**
+
+**Linux - Mozilla Firefox**
+
+**Mac - Safari**
+
+A weboldalt közvetlenül a böngészőn keresztül elérhetik a kliensek. A weboldal URL címét szükséges ismerni és ezt beírni a böngésző címsorába.
 
 ## 12. Karbantartási terv
 
