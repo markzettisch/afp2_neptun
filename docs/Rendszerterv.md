@@ -41,6 +41,7 @@
 
 ## 9. Implementációs terv
 
+A webes felület HTML, CSS, Javascript és PHP 8 nyelven fog elkészülni, Laravel keretrendszer segítségével. Az adatokat MySQL adatbázisban lesznek tárolva, tervek szerint külső helyen.
 
 
 ## 10. Tesztterv
