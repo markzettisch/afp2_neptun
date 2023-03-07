@@ -5,10 +5,7 @@ A projekt célja egy webes alkalmazás amely egy létező rendszer a "Neptun" m�
 A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányok  monitoringozása. A mi rendszerünk erre ad kimagasló szolgáltatást, mint a jegyek, hiányzások, átlagok nyomonkövetése.
 
 ## 3. Vágyálom rendszer 
-
-
-
-
+A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hallgatóknak jegyeik, jelenlétük, hiányzásuk, átlagaik nyomonkövetésére, forradalmian új eszközeink segítségével.
 ## 4. Funkcionális követelmények
 
 
