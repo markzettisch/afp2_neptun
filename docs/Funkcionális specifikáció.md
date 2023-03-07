@@ -33,6 +33,19 @@ A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányo
 
 ## 6. Használati esetek
 
+- **Az oldalra látogatva**
+    - **Bejelentkezés lehetősége**
+- **Bejelentkezés után(hallgató)**
+    - **Jegyek, átlagok megtekintése**
+    - **Hiányzás megtekintése**
+    - **Igazolás leadása**
+    - **Kijelentkezés**
+- **Bejelentkezés után(oktató)**
+    - **Jegyek, átlagok megtekintése, módosítása**
+    - **Hiányzás megtekintése, módosítása**
+    - **Igazolások megtekintése, eldogadása, elutasítása**
+    - **QR kód generálása.**
+    - **Kijelentkezés**
 
 ## 7. Képernyőterv
 
