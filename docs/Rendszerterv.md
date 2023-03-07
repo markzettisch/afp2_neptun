@@ -61,7 +61,7 @@ A weboldalt közvetlenül a böngészőn keresztül elérhetik a kliensek. A web
 
 ## 12. Karbantartási terv
 
-
+A kliens felhasználók a weboldalon megadott elérhetőségeken jelenthetik az esetlegesen felmerülő problémákat, hibákat, melyeket fejlesztőink javítanak.
 
 
 
