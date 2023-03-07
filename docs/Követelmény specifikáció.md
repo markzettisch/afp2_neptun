@@ -3,8 +3,7 @@
 
 
 ## 2. Jelenlegi helyzet
-
-
+A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányok  monitoringozása. A mi rendszerünk erre ad kimagasló szolgáltatást, mint a jegyek, hiányzások, átlagok nyomonkövetése.
 
 ## 3. Vágyálom rendszer 
 
