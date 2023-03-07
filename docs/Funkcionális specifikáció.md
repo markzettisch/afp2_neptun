@@ -8,7 +8,10 @@ A projekt célja egy webes alkalmazás amely egy létező rendszer a "Neptun" m�
 
 ## 3. Követelménylista
 
-
+- Jelenlét vezetés QR kód beolvasással.
+- Hiányzás vezetése, igazolás leadása funkció implementálása.
+- Jegyek vezetése, kezelése.
+- Jegyátlagok számítása.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
