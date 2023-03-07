@@ -5,10 +5,10 @@
 ## 2. Projektterv
 
 ### Projekttszerepkörök:
-  * Termék tulajdonos: 
+  * Termék tulajdonos: Sorsod Borsod csapat
 ### Projekttmunkások és felelősségek:
-  * Backend munkálatok: 
-  * Frontend munkálatok: 
+  * Backend munkálatok: Kiss Barnabás, Zettisch Márk
+  * Frontend munkálatok: Szegedi Tamás
 
 ### Feladatuk: 
 - 
