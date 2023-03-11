@@ -50,6 +50,7 @@
   
 ## 6. Fizikai környezet
 - **Az alkalmazás csak web platformra készül, MySQL adatbázissal lesz futtatva.**
+  - **Windows 64 bites operációs rendszeren futtatható.**
   - **Fejlesztői eszközök:**
     - **Visual Studio Code**
     - **Notepad++**
