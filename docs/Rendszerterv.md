@@ -23,6 +23,11 @@
 |Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
 |Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
 
+### 2.4 Mérföldkövek:
+   * Dokumentációk
+   * Programírás kezdete
+   * Program alapvető funkcióinak befejezése
+   * Fejlesztés befejezése
 
 ## 3. Üzleti folyamatok modellje
 
