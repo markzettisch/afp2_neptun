@@ -50,7 +50,7 @@ A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejle
 
   
 ## 6. Fizikai környezet
-- **Az alkalmazás csak web platformra készül, MySQL adatbázissal lesz futtatva.**
+- **Az alkalmazás csak web platformra készül, XAMPP segítségével, MySQL adatbázissal lesz futtatva.**
   - **Windows 64 bites operációs rendszeren futtatható.**
   - **Fejlesztői eszközök:**
     - **Visual Studio Code**
