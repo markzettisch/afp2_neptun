@@ -34,6 +34,16 @@
 
 ## 4. Követelmények
 
+**Funkcionális követelmények**
+  - **Felhasználó jelenlét, hiányzások tárolása**
+  - **Felhasználó tudják módosítani és törölni a jelenléteket, hiányzásokat**
+  - **QR kóddal történő lekérdezések**
+  - **Funkciók: átlagszámítás**
+
+  **Nem funkcionális követelmények**
+
+  **Törvényi előírások, szabványok:**
+  - **GDPR-nek való megfelelés**
 
 ## 5. Funkcionális terv
 
