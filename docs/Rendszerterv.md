@@ -16,7 +16,13 @@
 - 
 
 ### Ütemterv:
- - 
+|Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
+|-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
+|Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |             
+|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
+|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
+|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
+
 
 ## 3. Üzleti folyamatok modellje
 
