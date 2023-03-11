@@ -36,7 +36,7 @@
 
 **Funkcionális követelmények**
   - **Felhasználó jelenlét, hiányzások tárolása**
-  - **Felhasználó tudják módosítani és törölni a jelenléteket, hiányzásokat**
+  - **Felhasználók tudják módosítani és törölni a jelenléteket, hiányzásokat**
   - **QR kóddal történő lekérdezések**
   - **Funkciók: átlagszámítás**
 
