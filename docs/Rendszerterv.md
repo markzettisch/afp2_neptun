@@ -18,13 +18,13 @@
 ### Ütemterv:
  - 
 
- ## 3. Üzleti folyamatok modellje
+## 3. Üzleti folyamatok modellje
 
 
- ## 4. Követelmények
+## 4. Követelmények
 
 
-  ## 5. Funkcionális terv
+## 5. Funkcionális terv
 
   
 ## 6. Fizikai környezet
@@ -33,6 +33,7 @@
 
 ## 7. Architekturális terv
 
+A rendszer működéséhez szükség van egy adatbázis szerverre, ebben az esetben MySQL-re esett a választás. A Laravel, mint keretrendszer felel a reszponzív webdesign-ért. A backend php alapú.
 
 
 ## 8. Adatbázis terv
