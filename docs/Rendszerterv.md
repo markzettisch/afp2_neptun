@@ -49,7 +49,11 @@
 
   
 ## 6. Fizikai környezet
-
+- **Az alkalmazás csak web platformra készül, MySQL adatbázissal lesz futtatva.**
+  - **Fejlesztői eszközök:**
+    - **Visual Studio Code**
+    - **Notepad++**
+    - **XAMPP**
 
 
 ## 7. Architekturális terv
