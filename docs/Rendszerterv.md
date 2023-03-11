@@ -11,9 +11,9 @@
   * Frontend munkálatok: Szegedi Tamás
 
 ### Feladatuk: 
-- 
-- 
-- 
+- adatbázis létrehozása az adatok tárolásához
+- megfelelő funkciók elkészítése az oldal megfelelő működésének érdekében
+- felhasználói felület kialakítása
 
 ### Ütemterv:
 |Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
