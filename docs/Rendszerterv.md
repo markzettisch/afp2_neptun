@@ -1,5 +1,6 @@
 ## 1. Rendszer célja
 
+A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejlesztése, mely a jelenlét és hiányzások könyvelésének megkönnyítésére szolgál. Az alkalmazás használata lehetővé teszi a jelenlét vezetését QR kód beolvasással, hiányzás követését (igazolás leadás), jegyvezetést és átlagszámolást. A QR kódos beolvasás a gyorsabb rögzítést teszi lehetővé. Az alkalmazást PHP programnyelven - Laravel keretrendszerben – lesz elkészítve. 
 
 
 ## 2. Projektterv
@@ -11,28 +12,55 @@
   * Frontend munkálatok: Szegedi Tamás
 
 ### Feladatuk: 
-- 
-- 
-- 
+- adatbázis létrehozása az adatok tárolásához
+- megfelelő funkciók elkészítése az oldal megfelelő működésének érdekében
+- felhasználói felület kialakítása
 
 ### Ütemterv:
- - 
+|Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
+|-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
+|Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |             
+|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
+|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
+|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
 
- ## 3. Üzleti folyamatok modellje
+### 2.4 Mérföldkövek:
+   * Dokumentációk
+   * Programírás kezdete
+   * Program alapvető funkcióinak befejezése
+   * Fejlesztés befejezése
+
+## 3. Üzleti folyamatok modellje
 
 
- ## 4. Követelmények
+## 4. Követelmények
 
+**Funkcionális követelmények**
+  - **Felhasználó jelenlét, hiányzások tárolása**
+  - **Felhasználók tudják módosítani és törölni a jelenléteket, hiányzásokat**
+  - **QR kóddal történő lekérdezések**
+  - **Funkciók: átlagszámítás**
 
-  ## 5. Funkcionális terv
+  **Nem funkcionális követelmények**
+
+  **Törvényi előírások, szabványok:**
+  - **GDPR-nek való megfelelés**
+
+## 5. Funkcionális terv
 
   
 ## 6. Fizikai környezet
-
+- **Az alkalmazás csak web platformra készül, XAMPP segítségével, MySQL adatbázissal lesz futtatva.**
+  - **Windows 64 bites operációs rendszeren futtatható.**
+  - **Fejlesztői eszközök:**
+    - **Visual Studio Code**
+    - **Notepad++**
+    - **XAMPP**
 
 
 ## 7. Architekturális terv
 
+A rendszer működéséhez szükség van egy adatbázis szerverre, ebben az esetben MySQL-re esett a választás. A Laravel, mint keretrendszer felel a reszponzív webdesign-ért. A backend php alapú.
 
 
 ## 8. Adatbázis terv
@@ -45,6 +73,7 @@ A webes felület HTML, CSS, Javascript és PHP 8.2 nyelven fog elkészülni, Lar
 
 
 ## 10. Tesztterv
+
 
 
 
