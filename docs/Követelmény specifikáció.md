@@ -8,7 +8,15 @@ A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányo
 A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hallgatóknak jegyeik, jelenlétük, hiányzásuk, átlagaik nyomonkövetésére, forradalmian új eszközeink segítségével.
 ## 4. Funkcionális követelmények
 
-
+* A felhasználó (hallgató) megtekintheti jegyeit
+* A felhasználó (hallgató) jegyei átlagát
+* A felhasználó (hallgató) megtekintheti jegyei átlagát
+* A felhasználó (hallgató) jelezheti órai jelenlétét (QR)
+* A felhasználó (oktató) megtekintheti az órai hiányzásokat
+* A felhasználó (oktató) módosíthatja az órai hiányzásokat.
+* A felhasználó (oktató) megtekintheti a hallgatók jegyeit
+* A felhasználó (oktató) módosíthatja a hallgatók jegyeit
+* A felhasználó (oktató) megtakintheti a hallgatók 
 
 ## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
 
