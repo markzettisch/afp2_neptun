@@ -48,4 +48,11 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
 
 ## 9. Fogalomtár
 
+* UML - Unified Modeling Language
+* Reszponzív felület - Mobilon, Tableten, PC-n igazodik a képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül üzemelhet
+* Corrective Maintenance: A felhasználók által felfedezett és "user reportban" elküldött hibák kijavítása.
+* Adaptive Maintenance: A program naprakészen tartása és finomhangolása.
+* Perfective Maintenance: A szoftver hosszútávú használata érdekében végzett módosítások, új funkciók, a szoftver teljesítményének és   működési megbízhatóságának javítása.
+* Preventive Maintenance: Olyan problémák elhárítása, amelyek még nem tűnnek fontosnak, de később komoly problémákat okozhatnak.
+
 
