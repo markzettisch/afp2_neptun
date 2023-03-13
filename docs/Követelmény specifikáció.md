@@ -20,6 +20,8 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
 
 ## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
 
+* GDPR-nek való megfelelés
+
 
 ## 6. Jelenlegi üzleti folyamatok modellje
 
