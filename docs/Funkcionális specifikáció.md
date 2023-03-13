@@ -50,6 +50,7 @@ A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányo
 ## 7. Képernyőterv
 
 ![Képernyőterv](../docs/pics/kepernyoterv.jpg)
+![Képernyőterv2](../docs/pics/kepernyoterv2.jpg)
 
 ## 8. Forgatókönyv
 
