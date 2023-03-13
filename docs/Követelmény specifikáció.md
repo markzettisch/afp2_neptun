@@ -40,6 +40,10 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
 
 ## 8. Követelménylista
 
+* Jelenlét vezetés QR kód beolvasással.
+* Hiányzás vezetése, igazolás leadása funkció implementálása.
+* Jegyek vezetése, kezelése.
+* Jegyátlagok számítása.
 
 
 ## 9. Fogalomtár
