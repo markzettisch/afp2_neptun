@@ -80,6 +80,12 @@ A rendszer működéséhez szükség van egy adatbázis szerverre, ebben az eset
 
 ## 8. Adatbázis terv
 
+### **Táblák**
+- **table01:** Hallgatók listája
+  - **table02:** Adminisztrátorok listája
+  - **table03:** Hiányzások
+  - **table04:** Jegyek
+  - **table05:** QR kódok
 
 
 ## 9. Implementációs terv
