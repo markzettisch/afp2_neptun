@@ -19,7 +19,7 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
 * A felhasználó (oktató) megtakintheti a hallgatók 
 
 ## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
-s
+
 * GDPR-nek való megfelelés
 * 451/2016. (XII. 19.) Korm. rendelet az elektronikus ügyintézés részletszabályairól
 * 2015. évi CCXXII. törvény az elektronikus ügyintézés és a bizalmi szolgáltatások általános szabályairól
