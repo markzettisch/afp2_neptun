@@ -23,6 +23,7 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
 * GDPR-nek való megfelelés
 * 451/2016. (XII. 19.) Korm. rendelet az elektronikus ügyintézés részletszabályairól
 * 2015. évi CCXXII. törvény az elektronikus ügyintézés és a bizalmi szolgáltatások általános szabályairól
+* Ptk. 75. § (3): „A személyhez fűződő jogokat nem sérti az a magatartás, amelyhez a jogosult hozzájárult, feltéve, hogy a hozzájárulás megadása társadalmi érdeket nem sért vagy veszélyeztet. A személyhez fűződő jogokat egyébként korlátozó szerződés vagy egyoldalú nyilatkozat semmis.”
 
 
 ## 6. Jelenlegi üzleti folyamatok modellje
