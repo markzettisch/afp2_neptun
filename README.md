@@ -10,9 +10,9 @@ Trello link a projecthez: [Link](https://trello.com/invite/b/BFHQ3J6q/ATTI812be2
 Discord invitációs link: [Link](https://discord.gg/rBXEBBbu)
 
 Dokumentumok:
-* [Rendszerterv]()
-* [Funkcionális specifikáció]()
-* [Követelmény specifikáció]()
+* [Rendszerterv](https://github.com/markzettisch/afp2_neptun/blob/main/docs/Rendszerterv.md)
+* [Funkcionális specifikáció](https://github.com/markzettisch/afp2_neptun/blob/main/docs/Funkcion%C3%A1lis%20specifik%C3%A1ci%C3%B3.md)
+* [Követelmény specifikáció](https://github.com/markzettisch/afp2_neptun/blob/main/docs/K%C3%B6vetelm%C3%A9ny%20specifik%C3%A1ci%C3%B3.md)
 
 ## Csapattagok
 * [Kiss Barnabás](https://github.com/babarni12)
