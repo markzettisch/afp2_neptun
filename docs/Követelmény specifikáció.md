@@ -28,7 +28,7 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
 ## 6. Jelenlegi üzleti folyamatok modellje
 
 
-
+![Üzleti folyamatok](../docs/pics/uzlet.png)
 
 
 
