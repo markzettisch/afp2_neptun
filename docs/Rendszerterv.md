@@ -35,7 +35,7 @@ A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejle
    * Fejlesztés befejezése
 
 ## 3. Üzleti folyamatok modellje
-
+![Üzleti folyamatok](../docs/pics/uzlet.png)
 
 ## 4. Követelmények
 
