@@ -1,6 +1,6 @@
 ## 1. Rendszer célja
 
-A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejlesztése, mely a jelenlét és hiányzások könyvelésének megkönnyítésére szolgál. Az alkalmazás használata lehetővé teszi a jelenlét vezetését QR kód beolvasással, hiányzás követését (igazolás leadás), jegyvezetést és átlagszámolást. A QR kódos beolvasás a gyorsabb rögzítést teszi lehetővé. Az alkalmazást PHP programnyelven - Laravel keretrendszerben – lesz elkészítve. 
+A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejlesztése, mely a jelenlét és hiányzások követésének megkönnyítésére szolgál. Az alkalmazás használata lehetővé teszi a jelenlét vezetését QR kód beolvasással, hiányzás követését (igazolás leadás), jegyvezetést és átlagszámolást. A QR kódos beolvasás a gyorsabb rögzítést teszi lehetővé. Az alkalmazást PHP programnyelven - Laravel keretrendszerben – lesz elkészítve. 
 
 
 ## 2. Projektterv
