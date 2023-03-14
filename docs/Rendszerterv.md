@@ -48,6 +48,20 @@ A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejle
 
 ## 5. Funkcionális terv
 
+**Rendszerszereplők:**
+  - **Adminisztrátor**
+  - **Felhasználó**
+
+  **Rendszerhasználati esetek és lefutásaik:**
+  - **Adminisztrátor**
+    - **Jegy rögzítés, módosítás, törlés**
+    - **Hiányzás rögzítés, módosítás, törlés QR kóddal**
+    - **Átlagszámítás jegyek alapján**
+  - **Felhasználó**
+    - **Megtekintheti a saját jegyeit**
+    - **Átlagszámítás saját jegyek alapján**
+    - **Saját hiányzások lekérdezése**
+
   
 ## 6. Fizikai környezet
 - **Az alkalmazás csak web platformra készül, XAMPP segítségével, MySQL adatbázissal lesz futtatva.**
