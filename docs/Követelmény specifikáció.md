@@ -1,11 +1,15 @@
 ## 1. Áttekintés
+
 A projekt célja egy webes alkalmazás amely egy létező rendszer a "Neptun" másolata, bővített funkciókkal. Az alakalmazás ingyenes, az adatokat külső adatbázisban tároljuk.
 
 ## 2. Jelenlegi helyzet
+
 A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányok  monitoringozása. A mi rendszerünk erre ad kimagasló szolgáltatást, mint a jegyek, hiányzások, átlagok nyomonkövetése.
 
 ## 3. Vágyálom rendszer 
+
 A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hallgatóknak jegyeik, jelenlétük, hiányzásuk, átlagaik nyomonkövetésére, forradalmian új eszközeink segítségével.
+
 ## 4. Funkcionális követelmények
 
 * A felhasználó (hallgató) megtekintheti jegyeit
@@ -32,9 +36,9 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
 ![Üzleti folyamatok](../docs/pics/uzlet.png)
 
 
-
-
 ## 7. Igényelt üzleti folyamatok modellje
+
+
     5.1 Felhasználók jogai
         5.1.1 A felhasználó (hallgató) megtekintheti jegyeit
         5.1.2 A felhasználó (hallgató) jegyei átlagát
@@ -45,8 +49,9 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
         5.1.7 A felhasználó (oktató) megtekintheti a hallgatók jegyeit
         5.1.8 A felhasználó (oktató) módosíthatja a hallgatók jegyeit
         5.1.9 A felhasználó (oktató) megtakintheti a hallgatók 
-![Üzleti folyamatok](../docs/pics/uml.png)
 
+
+![Üzleti folyamatok](../docs/pics/uml.png)
 
 
 ## 8. Követelménylista
