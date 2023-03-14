@@ -23,7 +23,10 @@ A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejle
 |Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |             
 |Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
 |Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
+|Program                  |Képernyőtervek elkészítése                |         2 |             1 |                      1 |                1 |                   1 |
+|Program                  |Prototípus elkészítése	                |         3 |             5 |                      5 |                5 |                   5 |
 |Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
+|Program                  |Tesztelés                |         4 |             2 |                      2 |                2 |                   2 |
 
 ### 2.4 Mérföldkövek:
    * Dokumentációk
