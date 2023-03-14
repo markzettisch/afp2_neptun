@@ -94,7 +94,7 @@ A webes felület HTML, CSS, Javascript és PHP 8.2 nyelven fog elkészülni, Lar
 
 
 ## 10. Tesztterv
-
+Cypress vagy Selenium teszteléssel
 
 
 
