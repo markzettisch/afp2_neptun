@@ -15,6 +15,7 @@ A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejle
 - adatbázis létrehozása az adatok tárolásához
 - megfelelő funkciók elkészítése az oldal megfelelő működésének érdekében
 - felhasználói felület kialakítása
+- tesztelés
 
 ### Ütemterv:
 |Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
