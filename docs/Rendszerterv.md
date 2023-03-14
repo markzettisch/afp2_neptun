@@ -5,9 +5,9 @@ A rendszer elsődleges célja, olyan nyilvántartást segítő alkalmazás fejle
 
 ## 2. Projektterv
 
-### Projekttszerepkörök:
+### Projektszerepkörök:
   * Termék tulajdonos: Sorsod Borsod csapat
-### Projekttmunkások és felelősségek:
+### Projektmunkások és felelősségek:
   * Backend munkálatok: Kiss Barnabás, Zettisch Márk
   * Frontend munkálatok: Szegedi Tamás
 
