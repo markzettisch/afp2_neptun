@@ -29,6 +29,10 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
 
 
 
+
+
+
+
 ## 7. Igényelt üzleti folyamatok modellje
     5.1 Felhasználók jogai
         5.1.1 A felhasználó (hallgató) megtekintheti jegyeit
@@ -40,6 +44,8 @@ A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hal
         5.1.7 A felhasználó (oktató) megtekintheti a hallgatók jegyeit
         5.1.8 A felhasználó (oktató) módosíthatja a hallgatók jegyeit
         5.1.9 A felhasználó (oktató) megtakintheti a hallgatók 
+![Üzleti folyamatok](../docs/pics/uml.png)
+
 
 
 ## 8. Követelménylista
