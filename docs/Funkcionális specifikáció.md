@@ -1,6 +1,6 @@
 ## 1. Áttekintés
 
-A projekt célja egy webes alkalmazás amely egy létező rendszer a "Neptun" másolata, bővített funkciókkal. Az alakalmazás ingyenes, az adatokat külső adatbázisban tároljuk.
+A projekt célja egy reszponzív webes alkalmazás amely egy létező rendszer a "Neptun" másolata, bővített funkciókkal. Az alakalmazás ingyenes, az adatokat külső adatbázisban tároljuk.
 
 ## 2. Jelenlegi helyzet
 
