@@ -20,7 +20,7 @@ A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányo
 
 ## 5. Igényelt üzleti folyamatok modellje
 
-    ## 5. Igényelt üzleti folyamatok modellje
+    5. Igényelt üzleti folyamatok modellje
         5.1 Felhasználók jogai
             5.1.1 A felhasználó (hallgató) megtekintheti jegyeit
             5.1.2 A felhasználó (hallgató) megtekintheti jegyei átlagát
