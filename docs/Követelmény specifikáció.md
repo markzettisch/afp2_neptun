@@ -8,7 +8,7 @@ A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányo
 
 ## 3. Vágyálom rendszer 
 
-A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hallgatóknak jegyeik, jelenlétük, hiányzásuk, átlagaik nyomonkövetésére, forradalmian új eszközeink segítségével.
+A Webalkalmazásunk segítséget fog nyújtani felsőoktatásban résztvevő hallgatóknak jegyeik, jelenlétük, hiányzásuk, átlagaik nyomonkövetésére, forradalmian új eszközeink segítségével. Ezen lehetőségekkel szeretnénk gördülékenyebbé, megbízhatóbbá, átláthatóbbá tenni a jelenlegi, kissé zavaros, hibákkal teli "Neptun" rendszert.
 
 ## 4. Funkcionális követelmények
 
