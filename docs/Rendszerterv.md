@@ -55,14 +55,19 @@ Az alkalmazást PHP programnyelven - Laravel keretrendszerben – lesz elkészí
 
 **Rendszerszereplők:**
   - **Adminisztrátor**
-  - **Felhasználó**
+  - **Oktató**
+  - **Hallgató**
 
   **Rendszerhasználati esetek és lefutásaik:**
   - **Adminisztrátor**
     - **Jegy rögzítés, módosítás, törlés**
     - **Hiányzás rögzítés, módosítás, törlés QR kóddal**
     - **Átlagszámítás jegyek alapján**
-  - **Felhasználó**
+  - **Oktató**
+    - **Jegy rögzítés, módosítás, törlés**
+    - **Hiányzás rögzítés, módosítás, törlés QR kóddal**
+    - **Átlagszámítás jegyek alapján**
+  - **Hallgató**
     - **Megtekintheti a saját jegyeit**
     - **Átlagszámítás saját jegyek alapján**
     - **Saját hiányzások lekérdezése**
