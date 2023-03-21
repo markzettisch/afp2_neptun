@@ -4,7 +4,7 @@ A projekt célja egy reszponzív webes alkalmazás amely már egy létező rends
 
 ## 2. Jelenlegi helyzet
 
-A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányok monitoringozása. A mi rendszerünk erre ad kimagasló szolgáltatást, mint a jegyek, hiányzások, átlagok nyomonkövetése.
+A jelenlegi globális felsőoktatási helyzetben nagy prioritású a tanulmányok  monitoringozása. A mi rendszerünk erre ad kimagasló szolgáltatást, mint a jegyek, hiányzások, átlagok nyomonkövetése. Szolgáltatásunk ötvözi az évek óta használt jól bevált "Neptun" webes alkalmazás lehetőségeit, viszont az általunk bevezetett forradalmi innovációk segítségével még tökéletesebb rendszert hozunk létre.
 
 ## 3. Követelménylista
 
