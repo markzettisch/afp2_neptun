@@ -1,6 +1,6 @@
 ## 1. Áttekintés
 
-A projekt célja egy reszponzív webes alkalmazás amely egy létező rendszer a "Neptun" másolata, bővített funkciókkal. Az alakalmazás ingyenes, az adatokat külső adatbázisban tároljuk.
+A projekt célja egy reszponzív webes alkalmazás amely már egy létező rendszer a "Neptun" másolata, bővített funkciókkal. Ezen funkciók megkönnyíthetik mind a hallgató mind pedig az oktatók munkáját. Átláthatóbb és innovatívabb jelenléti ívet biztosít mely tükrözi a mai gyors világunk pörgését és nem igényel több időt mint 2 perc egy jelenlét felviteléhez a rendszerbe (QR kód). Az jegyátlag mutatása és a jegyek megtekintése funkció további motivációt nyújt a hallgatók számára, mely kutatások alapján javítják az átlagot a hallgatók körében amennyiben szükséges az. Az alkalmazás ingyenes, az adatokat külső adatbázisban tároljuk. 
 
 ## 2. Jelenlegi helyzet
 
