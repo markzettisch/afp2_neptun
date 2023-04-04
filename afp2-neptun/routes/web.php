@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +26,8 @@ Route::get('/studentlogin', function () {
 Route::get('/teacherlogin', function () {
     return view('/layouts/teacherlogin');
 });
+require __DIR__.'/auth.php';
+
+Route::get('/login', [AuthenticatedSessionController::class, 'createStudent'])->name('studentlogin');
+
+Route::get('/logint', [AuthenticatedSessionController::class, 'createTeacher'])->name('teacherlogin');
