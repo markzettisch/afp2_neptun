@@ -14,20 +14,39 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//home
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/studentlogin', function () {
-    return view('/layouts/studentlogin');
-});
+//LOGIN
+Route::get('/login', function () {
+    return view('login');
+})->name("login");
+Route::get('/student-login', function () {
+    return view('loginpanel.studentlogin');
+})->name("student.login");
+Route::get('/register-student', function () {
+    return view('registerpanel.studentregister');
+})->name("student.register");
+Route::get('/teacher-login', function () {
+    return view('loginpanel.teacherlogin');
+})->name("teacher.login");
+Route::get('/register-teacher', function () {
+    return view('registerpanel.teacherregister');
+})->name("teacher.register");
 
-Route::get('/teacherlogin', function () {
-    return view('/layouts/teacherlogin');
-});
+
+//pagesettings
+Route::get('/page_settings', [PageSettingsController::class, 'show'])->name("pagesettings.show");
+Route::get('/page_settings/edit', [PageSettingsController::class, 'edit'])->name("pagesettings.edit");
+Route::post('/page_settings/edit', [PageSettingsController::class, 'update']);
+
+//
+//
+
+
 require __DIR__.'/auth.php';
 
-Route::get('/login', [AuthenticatedSessionController::class, 'createStudent'])->name('studentlogin');
+//Route::get('/login', [AuthenticatedSessionController::class, 'createStudent'])->name('studentlogin');
 
-Route::get('/logint', [AuthenticatedSessionController::class, 'createTeacher'])->name('teacherlogin');

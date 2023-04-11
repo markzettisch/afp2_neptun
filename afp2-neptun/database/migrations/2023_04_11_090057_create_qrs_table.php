@@ -11,17 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('qrs', function (Blueprint $table) {
             $table->id();
-            $table->string("ncode");
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->foreignId("rank_id");
-            $table->rememberToken();
+            $table->string('content');
+            $table->foreignId("user_subject");
             $table->timestamps();
         });
+
     }
 
     /**
@@ -29,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('qrs');
     }
 };
