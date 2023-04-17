@@ -1,4 +1,4 @@
-@extends('layouts.mainpage')
+@extends('layouts.subjects')
 @section('content')
 
 <nav class="navbar navbar-dark navbar-expand-md bg-primary bg-gradient" style="--bs-primary: #0067ac;--bs-primary-rgb: 0,103,172;background: #0067ac;box-shadow: 0px 0px 8px;">

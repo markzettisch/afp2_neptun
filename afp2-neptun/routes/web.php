@@ -24,8 +24,8 @@ Route::get('/index', function () {
     return view('mainpage.mainpage');
 });
 
-Route::get('/marks', function () {
-    return view('mainpage.marks');
+Route::get('/subjects', function () {
+    return view('mainpage.subjects');
 });
 
 //LOGIN
