@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 /*
@@ -24,9 +24,7 @@ Route::get('/index', function () {
     return view('mainpage.mainpage');
 });
 
-Route::get('/subjects', function () {
-    return view('mainpage.subjects');
-});
+Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
 
 //LOGIN
 Route::get('/login', function () {

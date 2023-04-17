@@ -37,5 +37,11 @@ class UsersTableSeeder extends Seeder
             'email' => 'admin@admin.com',
             'rank_id' => 3,
         ]);
+        \App\Models\User::factory()->create([
+            'name' => 'Tajti Tibor',
+            'ncode' => "TAJTIBOR",
+            'email' => 'tajti@tibor.com',
+            'rank_id' => 2,
+        ]);
     }
 }
