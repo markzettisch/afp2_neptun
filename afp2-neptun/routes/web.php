@@ -19,8 +19,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//mainpage
 Route::get('/index', function () {
     return view('mainpage.mainpage');
+});
+
+Route::get('/marks', function () {
+    return view('mainpage.marks');
 });
 
 //LOGIN

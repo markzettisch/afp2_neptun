@@ -27,9 +27,6 @@
         </div>
     </div>
 </footer>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/aos.min.js"></script>
-<script src="assets/js/bs-init.js"></script>
-
-
+<script src="{{URL::asset('/js/aos.min.js')}}"></script>
+<script src="{{URL::asset('/js/bs-init.js')}}"></script>
 @endsection
