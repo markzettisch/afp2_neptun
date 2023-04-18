@@ -13,7 +13,10 @@
 </head>
 
 <body class="flex-column" style="min-height: 100vh;display: flex;">
+    @include('layouts._header')
     @yield('content')
+    @include('layouts._footer')
+
 </body>
 
 </html>

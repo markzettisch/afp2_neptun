@@ -11,7 +11,7 @@
                     <p style="font-family: 'JetBrains Mono', monospace;font-weight: bold;font-style: italic;margin-bottom: 3vw;">Egységes Tanulmányi Rendszer</p>
                     <form class="text-center" method="post" action="{{ route("login") }}">
                         @csrf
-                        <div class="mb-3"><input class="form-control form-control-lg" type="text" name="NeptunCode" placeholder="Neptunkód" style="font-family: 'JetBrains Mono', monospace;"></div>
+                        <div class="mb-3"><input class="form-control form-control-lg" type="text" name="NeptunCode" placeholder="Email" style="font-family: 'JetBrains Mono', monospace;"></div>
                         <div class="mb-3"><input class="form-control form-control-lg" type="password" name="Password" placeholder="Jelszó" style="font-family: 'JetBrains Mono', monospace;"></div>
                         <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" style="font-family: 'JetBrains Mono', monospace;--bs-primary: #0067ac;--bs-primary-rgb: 0,103,172;background: rgb(0,103,172);">Bejelentkezés</button></div>
                     </form>
