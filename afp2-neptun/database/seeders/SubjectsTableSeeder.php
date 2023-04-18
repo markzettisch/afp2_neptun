@@ -15,15 +15,18 @@ class SubjectsTableSeeder extends Seeder
     {
         Subject::create([
             'user_id' => "5",
-            "name"=>"AFP1"
+            "name"=>"AFP1",
+            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean."
         ]);
         Subject::create([
             'user_id' => "5",
-            "name"=>"AFP2"
+            "name"=>"AFP2",
+            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean."
         ]);
         Subject::create([
             'user_id' => "5",
-            "name"=>"AFP3"
+            "name"=>"AFP3",
+            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean."
         ]);
     }
 }
