@@ -28,6 +28,10 @@ Route::get('/indexteacher', function () {
     return view('mainpage.teachermainpage');
 });
 
+Route::get('/admin/marks', function () {
+    return view('mainpage.marksadmin');
+});
+
 Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
 
 //LOGIN
