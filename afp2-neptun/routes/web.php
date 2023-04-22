@@ -19,9 +19,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//mainpage
+//mainpages
 Route::get('/index', function () {
     return view('mainpage.mainpage');
+});
+
+Route::get('/indexteacher', function () {
+    return view('mainpage.teachermainpage');
 });
 
 Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
