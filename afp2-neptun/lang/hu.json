@@ -1,6 +1,10 @@
 {
     "Student log in":"Diák bejelentkezés",
     "Teacher log in":"Tanár bejelentkezés",
-    "":""
+    "Edit":"Módosítás",
+    "Credit":"Kredit",
+    "Suggested semester":"Ajánlott félév",
+    "Desc":"Leírás",
+    "Name":"Név"
     
 }

@@ -56,8 +56,17 @@ class SubjectController extends Controller
      */
     public function update(Request $request, Subject $subject)
     {
-       // $subject->name = $request->get("name");
-       // $subject->save();
+        $subject->name = $request->get("name");
+        $subject->desc = $request->get("desc");
+        $subject->suggested_semester = $request->get("suggested_semester");
+        $subject->credit = $request->get("credit");
+        
+        $subject->save();
+
+
+        $success = "Edited successfully! ";
+        $subjects = Subject::all();
+       return view('admin.checkAll')->with(compact("success","subjects"));
     }
 
     /**
@@ -66,5 +75,16 @@ class SubjectController extends Controller
     public function destroy(Subject $subject)
     {
         //
+    }   
+
+    public function showSubjects()
+    {
+        $subjects = Subject::all();
+        //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
+
+        return view('admin.checkAll')->with(compact("subjects")); // ?????? 
+
+
+
     }
 }

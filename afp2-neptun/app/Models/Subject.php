@@ -13,7 +13,9 @@ class Subject extends Model
     protected $fillable = [
         'user_id',
         'name',
-        'desc'
+        'desc',
+        "suggested_semester",
+        "credit"
     ];
 
     public function user()

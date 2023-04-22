@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Models\Subject;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,8 +30,16 @@ Route::get('/indexteacher', function () {
 });
 
 Route::get('/admin/marks', function () {
-    return view('mainpage.marksadmin');
+   
 });
+Route::get("/admin/subjects", [SubjectController::class,"showSubjects"])->name("admin.subjects");
+
+Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update"])->name("admin.subject.edit");
+
+
+
+
+
 
 Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
 
