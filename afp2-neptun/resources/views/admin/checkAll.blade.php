@@ -38,13 +38,13 @@
                                             style="background: rgb(0,103,172);">Létrehozás</button></div>
                                 </div>
                                     <input class="border rounded form-control form-control-lg d-xxl-flex" name="name" type="text"
-                                    style="width: 100%;margin-bottom: 1vw;" placeholder="Name">
+                                    style="width: 100%;margin-bottom: 1vw;" placeholder="{{ __("Name") }}" required>
                                     <input
-                                    class="border rounded form-control form-control-lg" name="description" type="text" style="width: 100%; margin-bottom: 1vw;" placeholder="Description">
+                                    class="border rounded form-control form-control-lg" name="description" type="text" style="width: 100%; margin-bottom: 1vw;" placeholder="{{ __("Desc") }}">
                                     <input class="border rounded form-control form-control-lg d-xxl-flex" name="suggested_semester" type="number"
-                                    style="width: 100%;margin-bottom: 1vw;" placeholder="Suggested Semester">
+                                    style="width: 100%;margin-bottom: 1vw;" placeholder="{{ __("Suggested semester") }}" required>
                                     <input class="border rounded form-control form-control-lg d-xxl-flex" name="credit" type="number"
-                                    style="width: 100%;margin-bottom: 1vw;" placeholder="Credit">
+                                    style="width: 100%;margin-bottom: 1vw;" placeholder="{{ __("Credit") }}" required>
                             </div>
                         </div>
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">

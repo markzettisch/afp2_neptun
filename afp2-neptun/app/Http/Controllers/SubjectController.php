@@ -38,9 +38,10 @@ class SubjectController extends Controller
 
         foreach($this->check_array as $item)
         {
-            if(empty($item))
+            if(empty($item) || $item == null or $item == "")
             {
                 $this->error = 1;
+                break;
             }
             else
             {
