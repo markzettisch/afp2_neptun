@@ -15,7 +15,8 @@ class SubjectController extends Controller
         $subjects = Subject::all();
 
         //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
-        return view('mainpage.subjects')->with(compact("subjects"));
+        // return view('mainpage.subjects')->with(compact("subjects"));
+        return view('admin.checkAll')->with(compact("subjects"));
     }
 
     /**
