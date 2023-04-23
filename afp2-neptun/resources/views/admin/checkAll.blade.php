@@ -17,7 +17,7 @@
                 <div class="col-xl-3 col-xxl-1 d-xl-flex justify-content-xl-start align-items-xl-center justify-content-xxl-start align-items-xxl-end"
                     style="padding-bottom: 2vw;"></div>
                 <div class="col-xxl-4">
-                    <form>
+                    <form action="{{ url('/admin/subjects') }}" method="post" autocomplete="off">
                         <div class="card">
                             <div class="card-body p-4">
                                 <div class="row d-xxl-flex justify-content-xxl-center align-items-xxl-start"
@@ -34,13 +34,21 @@
                                     </div>
                                     <div
                                         class="col-5 col-sm-3 col-md-7 col-lg-5 col-xl-4 col-xxl-4 d-flex d-xxl-flex justify-content-center align-items-start justify-content-xxl-end align-items-xxl-start">
-                                        <button class="btn btn-primary d-xl-flex justify-content-xl-center" type="button"
+                                        <button class="btn btn-primary d-xl-flex justify-content-xl-center" type="submit"
                                             style="background: rgb(0,103,172);">Létrehozás</button></div>
-                                </div><input class="border rounded form-control form-control-lg d-xxl-flex" type="text"
-                                    style="width: 80%;margin-bottom: 1vw;"><input
-                                    class="border rounded form-control form-control-lg" type="text" style="width: 100%;">
+                                </div>
+                                    <input class="border rounded form-control form-control-lg d-xxl-flex" name="name" type="text"
+                                    style="width: 100%;margin-bottom: 1vw;" placeholder="Name">
+                                    <input
+                                    class="border rounded form-control form-control-lg" name="description" type="text" style="width: 100%; margin-bottom: 1vw;" placeholder="Description">
+                                    <input class="border rounded form-control form-control-lg d-xxl-flex" name="suggested_semester" type="number"
+                                    style="width: 100%;margin-bottom: 1vw;" placeholder="Suggested Semester">
+                                    <input class="border rounded form-control form-control-lg d-xxl-flex" name="credit" type="number"
+                                    style="width: 100%;margin-bottom: 1vw;" placeholder="Credit">
                             </div>
                         </div>
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="_method" value="POST">
                     </form>
                 </div>
                 <div class="col-xxl-1"></div>

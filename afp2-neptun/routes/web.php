@@ -33,7 +33,7 @@ Route::get('/admin/marks', function () {
    
 });
 Route::get("/admin/subjects", [SubjectController::class,"showSubjects"])->name("admin.subjects");
-
+Route::post('/admin/subjects', [SubjectController::class,'create'])->name("mysubjects");
 Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update"])->name("admin.subject.edit");
 
 
@@ -42,6 +42,7 @@ Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update
 
 
 Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
+
 
 //LOGIN
 Route::get('/login', function () {

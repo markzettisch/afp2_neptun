@@ -4,9 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Subject;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SubjectController extends Controller
 {
+    private $name;
+    private $description;
+    private $suggested_semester;
+    private $credit;
+
     /**
      * Display a listing of the resource.
      */
@@ -15,16 +21,47 @@ class SubjectController extends Controller
         $subjects = Subject::all();
 
         //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
-        // return view('mainpage.subjects')->with(compact("subjects"));
-        return view('admin.checkAll')->with(compact("subjects"));
+        return view('mainpage.subjects')->with(compact("subjects"));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $this->name = $request->name;
+        $this->description = $request->description;
+        $this->suggested_semester = $request->suggested_semester;
+        $this->credit = $request->credit;
+
+        $this->check_array = [$this->name, $this->description, $this->suggested_semester, $this->credit];
+
+        foreach($this->check_array as $item)
+        {
+            if(empty($item))
+            {
+                $this->error = 1;
+            }
+            else
+            {
+                $this->error = 0;
+            }
+        }
+
+        if($this->error == 0)
+        {
+            DB::table('subjects')->insert([
+                'user_id' => 1, // Ezt majd cserélni kell.
+                'name' => $this->name,
+                'created_at' => now(),
+                'updated_at' => now(),
+                'desc' => $this->description,
+                'suggested_semester' => $this->suggested_semester,
+                'credit' => $this->credit
+            ]);
+        }
+
+        return redirect('/admin/subjects');
     }
 
     /**
