@@ -5,6 +5,6 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 --- | --- | --- | --- | --- | --- | --- 
 1 |Adminpanel Tárgyak|Új tárgy felvételét üres mezőkkel ne engedje|Siker| - |Zettisch Márk| 2023.04.24. 
 2 |Adminpanel Tárgyak|Meglévő tárgy módosítását üres mezőkkel ne engedje|Siker| - |Zettisch Márk| 2023.04.24.
-3 |  |  |  | - |  | 2023.04.25.
+3 |Login|Tanár login form üres értékekkel hibaüzenettel kell visszatérnie|Siker| - |Zettisch Márk| 2023.04.25.
 4 |  |  |  | - |  | 2023.04.25.
 5 |  |  |  | - |  | 2023.04.25.
