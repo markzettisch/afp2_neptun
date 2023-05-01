@@ -34,13 +34,10 @@ Route::get('/student/marks', function () {
     return view('mainpage.marksstudents');
 });
 
-<<<<<<< HEAD
 Route::get('/teacher/marks', function () {
     return view('mainpage.marksteacher');
 });
 
-=======
->>>>>>> main
 
 Route::get('/admin/marks', function () {
    
