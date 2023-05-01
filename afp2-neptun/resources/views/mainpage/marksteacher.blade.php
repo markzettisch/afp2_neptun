@@ -53,11 +53,13 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="font-family: 'JetBrains Mono', monospace;">Magasszintű programozási nyelvek II.</td>
-                            <td style="font-family: 'JetBrains Mono', monospace;">Göröcs Lajos Zsolt</td>
-                            <td><input class="form-control-sm" type="number" style="width: 30%;" min="1" max="5" step="1" placeholder="1" name="mark"></td>
+                            @foreach($marks as $mark)
+                            <td style="font-family: 'JetBrains Mono', monospace;">{{ $mark->name }}</td>
+                            <td style="font-family: 'JetBrains Mono', monospace;">{{ $mark->hallgato }}</td>
+                            <td><input class="form-control-sm" type="number" style="width: 30%;" min="1" max="5" step="1" placeholder={{$mark->mark}} name="mark"></td>
                             <td><button class="btn btn-primary btn-sm" type="button" style="background: rgb(15,112,177);font-family: 'JetBrains Mono', monospace;">Módosítás</button></td>
                             <td><button class="btn btn-danger btn-sm" type="button" style="font-family: 'JetBrains Mono', monospace;">Törlés</button></td>
+                            @endforeach
                         </tr>
                     </tbody>
                 </table>

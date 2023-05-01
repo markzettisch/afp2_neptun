@@ -23,10 +23,12 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">2023.05.12.</th>
-                <td>Péter Árpád</td>
-                <td>Valmi useless tantárgy</td>
-                <td>5</td>
+                @foreach($marks as $mark )
+                <th scope="row">{{ $mark->created_at }}</th>
+                <td>{{ $mark-> hallgato }}</td>
+                <td>{{ $mark->name }}</td>
+                <td>{{ $mark->mark }}</td>
+                @endforeach
               </tr>
             </tbody>
           </table>

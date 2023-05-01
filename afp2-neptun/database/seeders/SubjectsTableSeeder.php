@@ -16,17 +16,23 @@ class SubjectsTableSeeder extends Seeder
         Subject::create([
             'user_id' => "5",
             "name"=>"AFP1",
-            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean."
+            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.",
+            "suggested_semester"=>"3",
+            "credit"=>"3"
         ]);
         Subject::create([
             'user_id' => "5",
             "name"=>"AFP2",
-            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean."
+            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.",
+            "suggested_semester"=>"3",
+            "credit"=>"2"
         ]);
         Subject::create([
             'user_id' => "5",
             "name"=>"AFP3",
-            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean."
+            "desc"=>"Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.",
+            "suggested_semester"=>"3",
+            "credit"=>"2"
         ]);
     }
 }
