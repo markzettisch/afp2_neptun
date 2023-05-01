@@ -29,6 +29,9 @@ Route::get('/indexteacher', function () {
     return view('mainpage.teachermainpage');
 });
 
+
+Route::get('/teacher/mysubjects', [SubjectController::class,'indexteacher'])->name("mysubjects");
+
 Route::get('/admin/marks', function () {
    
 });

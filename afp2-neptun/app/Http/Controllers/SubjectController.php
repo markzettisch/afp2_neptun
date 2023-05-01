@@ -24,6 +24,14 @@ class SubjectController extends Controller
         return view('mainpage.subjects')->with(compact("subjects"));
     }
 
+    public function indexteacher()
+    {
+        $subjects = Subject::all();
+
+        //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
+        return view('mainpage.subjectsteacher')->with(compact("subjects"));
+    }
+
     /**
      * Show the form for creating a new resource.
      */
