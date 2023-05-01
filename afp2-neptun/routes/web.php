@@ -34,6 +34,10 @@ Route::get('/student/marks', function () {
     return view('mainpage.marksstudents');
 });
 
+Route::get('/teacher/marks', function () {
+    return view('mainpage.marksteacher');
+});
+
 
 Route::get('/admin/marks', function () {
    

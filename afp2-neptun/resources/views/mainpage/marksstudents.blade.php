@@ -2,6 +2,15 @@
 @section('content')
 
 <section id="main" style="margin-top: auto;">
+    <div class="container text-center">
+        <div class="row d-flex flex-column">
+            <div class="col">
+                <h1 class="d-xxl-flex justify-content-xxl-start align-items-xxl-center" style="font-family: 'JetBrains Mono', monospace;">Jegyek</h1>
+            </div>
+            <div class="col-xxl-4">
+                <p class="text-center" style="font-family: 'JetBrains Mono', monospace;">Az alábbi menüpontban láthatja a tantárgyakból megszerzett jegyeket.</p>
+            </div>
+        </div>
     <div class="container text-center pt-5">
         <table class="table">
             <thead class="thead-dark">
