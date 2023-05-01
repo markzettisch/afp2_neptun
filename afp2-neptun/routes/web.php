@@ -30,7 +30,10 @@ Route::get('/indexteacher', function () {
 });
 
 
-Route::get('/teacher/mysubjects', [SubjectController::class,'indexteacher'])->name("mysubjects");
+Route::get('/student/marks', function () {
+    return view('mainpage.marksstudents');
+});
+
 
 Route::get('/admin/marks', function () {
    
@@ -42,7 +45,7 @@ Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update
 
 
 
-
+Route::get('/teacher/mysubjects', [SubjectController::class,'indexteacher'])->name("mysubjects");
 
 Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
 
