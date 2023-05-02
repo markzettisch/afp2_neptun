@@ -56,6 +56,9 @@ Route::get('/teacher/mysubjects', [SubjectController::class,'indexteacher'])->na
 Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
 
 Route::get('/teacher/marks', [MarkController::class,'showMarks'])->name("mymarks");
+
+Route::post('/teacher/marks', [MarkController::class,'create'])->name("mymarks");
+
 Route::get('/student/marks', [MarkController::class,'index'])->name("mymarks");
 
 
