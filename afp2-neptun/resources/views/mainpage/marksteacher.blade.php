@@ -12,6 +12,7 @@
         </div>
     </div>
     <form action="{{ url('/teacher/marks') }}" method="post" autocomplete="off">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="row">
             <div class="col-xl-5 col-xxl-4 d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center align-items-xxl-start" style="margin-top: 2vw;">
                 <h3 style="font-family: 'JetBrains Mono', monospace;">Tantárgy</h3><select class="form-select-lg" name="subject_id">

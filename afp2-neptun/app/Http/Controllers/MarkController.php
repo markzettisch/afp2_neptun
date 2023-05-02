@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\marks;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MarkController extends Controller
 {
@@ -26,7 +27,7 @@ class MarkController extends Controller
      */
     public function create(Request $request)
     {
-        $this->user_id = 1;
+        $this->user_id = $request->_token;
         $this->name = $request->subject_id;
         $this->hallgato = $request->student_id;
         $this->mark = $request->mark;
