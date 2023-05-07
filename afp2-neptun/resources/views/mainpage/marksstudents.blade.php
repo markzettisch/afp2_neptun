@@ -22,14 +22,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
                 @foreach($marks as $mark )
+                <tr>
                 <th scope="row">{{ $mark->created_at }}</th>
                 <td>{{ $mark-> hallgato }}</td>
                 <td>{{ $mark->name }}</td>
                 <td>{{ $mark->mark }}</td>
+                </tr>
                 @endforeach
-              </tr>
             </tbody>
           </table>
     </div>
