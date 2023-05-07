@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\marks;
+use App\Models\Subject;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -102,16 +103,23 @@ class MarkController extends Controller
         //
     }
     
-    public function showMarks()
+    public function showMarksandSubjects()
     {
         $marks = marks::all();
-        //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
+        $subjects = Subject::all();
 
-        return view('mainpage.marksteacher')->with(compact("marks")); // ?????? 
+        return view('mainpage.marksteacher')->with(compact("marks", "subjects")); // ?????? 
+
+        
+        //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
 
 
 
     }
+
+
+
+
 
 
 }

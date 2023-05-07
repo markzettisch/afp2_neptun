@@ -16,9 +16,9 @@
         <div class="row">
             <div class="col-xl-5 col-xxl-4 d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center align-items-xxl-start" style="margin-top: 2vw;">
                 <h3 style="font-family: 'JetBrains Mono', monospace;">Tantárgy</h3><select class="form-select-lg" name="subject_id">
-                    <option value="1" selected="">Alkalmazások fejlesztése és projektlabor II.</option>
-                    <option value="2" selected="">Kalkulus II.</option>
-                    <option value="3" selected="">Magasszintű programozási nyelvek II.</option>
+                    @foreach($subjects as $subject)
+                        <option value="{{ $subject->name }}" selected="">{{ $subject->name }}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="col-xl-3 offset-xl-0 d-flex d-xl-flex flex-column justify-content-xl-start justify-content-xxl-center align-items-xxl-center" style="margin-top: 2vw;">
@@ -55,15 +55,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
                             @foreach($marks as $mark)
+                            <tr>
                             <td style="font-family: 'JetBrains Mono', monospace;">{{ $mark->name }}</td>
                             <td style="font-family: 'JetBrains Mono', monospace;">{{ $mark->hallgato }}</td>
-                            <td><input class="form-control-sm" type="number" style="width: 30%;" min="1" max="5" step="1" placeholder={{$mark->mark}} name="mark"></td>
+                            <td><input class="form-control-sm" type="number" style="width: 30%;" min="1" max="5" step="1" placeholder="{{$mark->mark}}" name="mark"></td>
                             <td><button class="btn btn-primary btn-sm" type="button" style="background: rgb(15,112,177);font-family: 'JetBrains Mono', monospace;">Módosítás</button></td>
                             <td><button class="btn btn-danger btn-sm" type="button" style="font-family: 'JetBrains Mono', monospace;">Törlés</button></td>
+                            </tr>
                             @endforeach
-                        </tr>
                     </tbody>
                 </table>
             </div>
