@@ -80,7 +80,7 @@
                                     </svg></div>
                                 <div>
 
-                                    {{ $subject->user->name }}
+                                    <!-- {{ $subject->name }} -->
                                 </div> <input name="name" class="border rounded form-control-lg w-100 d-xxl-flex" type="text"
                                     style="width: 80%;margin-bottom: 1vw;" value="{{ $subject->name }}" placeholder="{{ __("Name") }}"> 
                                     <input  name="desc" class="border rounded form-control-lg w-100" type="text" style="width: 100%;margin-bottom: 1vw;" value="{{ $subject->desc }}" placeholder="{{ __("Desc") }}">

@@ -42,7 +42,7 @@ class SubjectController extends Controller
         $this->suggested_semester = $request->suggested_semester;
         $this->credit = $request->credit;
 
-        $this->check_array = [$this->name, $this->description, $this->suggested_semester, $this->credit];
+        $this->check_array = [$this->name, $this->suggested_semester, $this->credit];
 
         foreach($this->check_array as $item)
         {
@@ -59,18 +59,38 @@ class SubjectController extends Controller
 
         if($this->error == 0)
         {
-            DB::table('subjects')->insert([
-                'user_id' => 1, // Ezt majd cserélni kell.
-                'name' => $this->name,
-                'created_at' => now(),
-                'updated_at' => now(),
-                'desc' => $this->description,
-                'suggested_semester' => $this->suggested_semester,
-                'credit' => $this->credit
-            ]);
+            if($this->description == "") {
+                DB::table('subjects')->insert([
+                    'user_id' => 1, // Ezt majd cserélni kell.
+                    'name' => $this->name,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                    'desc' => "",
+                    'suggested_semester' => $this->suggested_semester,
+                    'credit' => $this->credit
+                ]);
+            } else {
+                DB::table('subjects')->insert([
+                    'user_id' => 1, // Ezt majd cserélni kell.
+                    'name' => $this->name,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                    'desc' => $this->description,
+                    'suggested_semester' => $this->suggested_semester,
+                    'credit' => $this->credit
+                ]);
+            }
+            
+            $success = "Sikeres művelet!";
+        } else {
+            $success = "Sikertelen művelet!";
         }
 
-        return redirect('/admin/subjects');
+        
+
+        
+        $subjects = Subject::all();
+        return view('admin.checkAll')->with(compact("success","subjects"));
     }
 
     /**
@@ -108,10 +128,34 @@ class SubjectController extends Controller
         $subject->suggested_semester = $request->get("suggested_semester");
         $subject->credit = $request->get("credit");
         
-        $subject->save();
+        $this->check_array = [$subject->name, $subject->desc, $subject->suggested_semester, $subject->credit];
+
+        foreach($this->check_array as $item)
+        {
+            if(empty($item) || $item == null or $item == "")
+            {
+                $this->error = 1;
+                break;
+            }
+            else
+            {
+                $this->error = 0;
+            }
+        }
+
+        if($this->error == 0) {
+            $subject->save(); 
+            $success = "Sikeres művelet! ";
+        } else {
+            $success = "Sikertelen művelet! ";
+        }
+        
+       
+
+        
 
 
-        $success = "Edited successfully! ";
+        
         $subjects = Subject::all();
        return view('admin.checkAll')->with(compact("success","subjects"));
     }
