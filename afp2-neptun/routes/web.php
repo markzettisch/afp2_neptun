@@ -2,8 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubjectController;
-use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\MarkController;
 use App\Models\Subject;
+use App\Models\subjects;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -49,9 +52,19 @@ Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update
 
 
 
+
 Route::get('/teacher/mysubjects', [SubjectController::class,'indexteacher'])->name("mysubjects");
 
 Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
+
+Route::get('/teacher/marks', [MarkController::class,'showMarksandSubjects'])->name("mymarks");
+
+Route::post('/teacher/marks', [MarkController::class,'create'])->name("mymarks");
+
+Route::get('/student/marks', [MarkController::class,'index'])->name("mymarks");
+
+
+
 
 
 //LOGIN
