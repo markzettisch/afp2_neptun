@@ -18,15 +18,9 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//home
 Route::get('/', function () {
-    return view('welcome');
-});
-
-//mainpages
-Route::get('/index', function () {
-    return view('mainpage.mainpage');
-});
+    return view('mainpage');
+})->middleware(['auth', 'verified'])->name('main');
 
 Route::get('/indexteacher', function () {
     return view('mainpage.teachermainpage');
