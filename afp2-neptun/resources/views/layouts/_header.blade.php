@@ -3,7 +3,7 @@
         <div class="collapse navbar-collapse d-xl-flex justify-content-end justify-content-xl-end" id="navcol-1">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="{{ url("student/marks") }}" style="font-family: 'JetBrains Mono', monospace;color: rgb(255,255,255);">Jegyek</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" style="font-family: 'JetBrains Mono', monospace;color: rgb(255,255,255);">Hiányzások</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url("student/missing") }}" style="font-family: 'JetBrains Mono', monospace;color: rgb(255,255,255);">Hiányzások</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url("subjects/mysubjects") }}" style="font-family: 'JetBrains Mono', monospace;color: rgb(255,255,255);">Tantárgyak</a></li>
                 <li class="nav-item"><form method="POST" action="{{ route('logout') }}">
                     @csrf

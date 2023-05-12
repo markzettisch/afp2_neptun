@@ -39,6 +39,10 @@ Route::get('/teacher/missing', function () {
     return view('mainpage.teachermissing');
 });
 
+Route::get('/student/missing', function () {
+    return view('mainpage.missingstudents');
+});
+
 Route::get('/admin/marks', function () {
    
 });
