@@ -35,6 +35,9 @@ Route::get('/teacher/marks', function () {
     return view('mainpage.marksteacher');
 });
 
+Route::get('/teacher/missing', function () {
+    return view('mainpage.teachermissing');
+});
 
 Route::get('/admin/marks', function () {
    
