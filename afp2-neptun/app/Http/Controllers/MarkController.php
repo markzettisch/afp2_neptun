@@ -92,7 +92,16 @@ class MarkController extends Controller
      */
     public function update(Request $request, marks $marks)
     {
-        //
+      
+        $marks->mark = $request->get("mark");
+        
+        $this->check_array = [$marks->mark];
+
+        $marks->save();
+        $marks = marks::all();
+        $subjects = Subject::all();
+        return view('mainpage.marksteacher')->with(compact("marks","subjects"));
+   
     }
 
     /**
@@ -107,6 +116,7 @@ class MarkController extends Controller
     {
         $marks = marks::all();
         $subjects = Subject::all();
+        
 
         return view('mainpage.marksteacher')->with(compact("marks", "subjects")); // ?????? 
 

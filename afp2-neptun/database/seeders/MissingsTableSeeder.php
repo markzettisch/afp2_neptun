@@ -12,6 +12,6 @@ class MissingsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+      //
     }
 }

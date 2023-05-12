@@ -1,5 +1,10 @@
 @extends('layouts.mainpageteacher')
 @section('content')
+@isset($success)
+    <div style="background-color: greenyellow"> 
+        <p> {{ $success }}</p>
+    </div>
+@endisset
 
 <section id="main" style="margin-top: auto;">
 <div class="container text-center">
@@ -55,11 +60,13 @@
                     </thead>
                     <tbody>
                             @foreach($marks as $mark)
+                            <form action="{{ route("admin.marks.edit", $mark->id) }}" method="post" >  
+                                @csrf
                             <tr>
                             <td style="font-family: 'JetBrains Mono', monospace;">{{ $mark->name }}</td>
                             <td style="font-family: 'JetBrains Mono', monospace;">{{ $mark->hallgato }}</td>
                             <td><input class="form-control-sm" type="number" style="width: 30%;" min="1" max="5" step="1" value="{{$mark->mark}}" name="mark"></td>
-                            <td><button class="btn btn-primary btn-sm" type="button" style="background: rgb(15,112,177);font-family: 'JetBrains Mono', monospace;">Módosítás</button></td>
+                            <td><button class="btn btn-primary btn-sm" type="submit" value="{{ __("Edit") }}" style="background: rgb(15,112,177);font-family: 'JetBrains Mono', monospace;">Módosítás</button></td>
                             <td><button class="btn btn-danger btn-sm" type="button" style="font-family: 'JetBrains Mono', monospace;">Törlés</button></td>
                             </tr>
                             @endforeach

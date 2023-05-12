@@ -17,7 +17,7 @@ class MarksTableSeeder extends Seeder
             'user_id' => "5",
             "name"=>"AFP2",
             "hallgato"=>"Göröcs Lajos",
-            "mark"=>"5"
+            'mark'=>"5"
         ]);
     }
 }

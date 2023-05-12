@@ -50,6 +50,7 @@ Route::get("/admin/subjects", [SubjectController::class,"showSubjects"])->name("
 Route::post('/admin/subjects', [SubjectController::class,'create'])->name("mysubjects");
 Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update"])->name("admin.subject.edit");
 
+Route::post("/teacher/marks/update/{marks}", [MarkController::class,"update"])->name("admin.marks.edit");
 
 
 
