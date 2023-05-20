@@ -19,6 +19,10 @@ class MarkController extends Controller
      */
     public function index()
     {
+        if (auth()->user()->rank_id != 0) {
+            return redirect("/");
+        }
+
         $marks = marks::all();
         return view('mainpage.marksstudents')->with(compact("marks"));
     }
@@ -114,6 +118,10 @@ class MarkController extends Controller
     
     public function showMarksandSubjects()
     {
+        if (auth()->user()->rank_id != 1) {
+            return redirect("/");
+        }
+
         $marks = marks::all();
         $subjects = Subject::all();
         

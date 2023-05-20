@@ -7,6 +7,7 @@ use App\Http\Controllers\MarkController;
 use App\Models\Subject;
 use App\Models\subjects;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,33 +23,82 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 
 Route::get('/', function () {
+    if (Auth::user()->rank_id != 0) {
+        return view('mainpage.teachermainpage');
+    }
+
     return view('mainpage.mainpage');
 })->middleware(['auth', 'verified'])->name('main');
 
+
+
 Route::get('/indexteacher', function () {
-    return view('mainpage.teachermainpage');
-});
+    if (Auth::user()->rank_id == 1 ) {
+        return view('mainpage.teachermainpage');
+    }
+
+    return redirect('/');
+})->middleware(['auth', 'verified'])->name('main');
+
 
 
 Route::get('/student/marks', function () {
-    return view('mainpage.marksstudents');
-});
+
+    if (Auth::user()->rank_id == 0 ) {
+        return view('mainpage.marksstudents');
+    }
+
+    return redirect('/');
+
+
+})->middleware(['auth', 'verified'])->name('main');
+
+
 
 Route::get('/teacher/marks', function () {
-    return view('mainpage.marksteacher');
-});
+    if (Auth::user()->rank_id == 1 ) {
+        return view('mainpage.marksteacher');
+    }
+
+    if (Auth::user()->rank_id == 2 ) {
+        return view('mainpage.marksadmin'); 
+    }
+
+    return redirect('/');
+    
+
+})->middleware(['auth', 'verified'])->name('main');
+
+
 
 Route::get('/teacher/missing', function () {
-    return view('mainpage.teachermissing');
-});
+
+    if (Auth::user()->rank_id == 1 ) {
+        return view('mainpage.teachermissing');
+    }
+
+    return redirect('/');
+
+})->middleware(['auth', 'verified'])->name('main');
 
 Route::get('/student/missing', function () {
-    return view('mainpage.missingstudents');
-});
+    if (Auth::user()->rank_id == 0 ) {
+        return view('mainpage.missingstudents');
+    }
+
+    return redirect('/');
+
+
+})->middleware(['auth', 'verified'])->name('main');
 
 Route::get('/admin/marks', function () {
-   
-});
+    if (Auth::user()->rank_id == 2 ) {
+        return view('mainpage.marksadmin'); 
+    }
+
+    return redirect('/');
+})->middleware(['auth', 'verified'])->name('main');
+
 Route::get("/admin/subjects", [SubjectController::class,"showSubjects"])->name("admin.subjects");
 Route::post('/admin/subjects', [SubjectController::class,'create'])->name("mysubjects");
 Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update"])->name("admin.subject.edit");
@@ -59,15 +109,15 @@ Route::post("/teacher/marks/destroy/{marks}", [MarkController::class,"destroy"])
 
 
 
-Route::get('/teacher/mysubjects', [SubjectController::class,'indexteacher'])->name("mysubjects");
+Route::get('/teacher/mysubjects', [SubjectController::class,'indexteacher'])->name("mysubjects")->middleware(['auth', 'verified'])->name('main');
 
-Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects");
+Route::get('/subjects/mysubjects', [SubjectController::class,'index'])->name("mysubjects")->middleware(['auth', 'verified'])->name('main');
 
-Route::get('/teacher/marks', [MarkController::class,'showMarksandSubjects'])->name("mymarks");
+Route::get('/teacher/marks', [MarkController::class,'showMarksandSubjects'])->name("mymarks")->middleware(['auth', 'verified'])->name('main');
 
-Route::post('/teacher/marks', [MarkController::class,'create'])->name("mymarks");
+Route::post('/teacher/marks', [MarkController::class,'create'])->name("mymarks")->middleware(['auth', 'verified'])->name('main');
 
-Route::get('/student/marks', [MarkController::class,'index'])->name("mymarks");
+Route::get('/student/marks', [MarkController::class,'index'])->name("mymarks")->middleware(['auth', 'verified'])->name('main');
 
 
 

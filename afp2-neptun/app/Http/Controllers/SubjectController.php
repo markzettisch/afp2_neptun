@@ -18,6 +18,10 @@ class SubjectController extends Controller
      */
     public function index()
     {
+        if (auth()->user()->rank_id != 0) {
+            return redirect("/");
+        }
+
         $subjects = Subject::all();
 
         //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
@@ -26,6 +30,10 @@ class SubjectController extends Controller
 
     public function indexteacher()
     {
+        if (auth()->user()->rank_id != 1) {
+            return redirect("/");
+        }
+
         $subjects = Subject::all();
 
         //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
@@ -36,7 +44,15 @@ class SubjectController extends Controller
      * Show the form for creating a new resource.
      */
     public function create(Request $request)
-    {
+    {   
+        if (auth()->user() == null) {
+            return redirect("/");
+        }
+
+        if (auth()->user()->rank_id != 2) {
+            return redirect("/");
+        }
+
         $this->name = $request->name;
         $this->description = $request->description;
         $this->suggested_semester = $request->suggested_semester;
@@ -163,6 +179,14 @@ class SubjectController extends Controller
 
     public function showSubjects()
     {
+        if (auth()->user() == null){
+            return redirect("/");
+        }
+
+        if (auth()->user()->rank_id != 2) {
+            return redirect("/");
+        }
+
         $subjects = Subject::all();
         //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
 
