@@ -3,11 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Pagination\Paginator;
-use View;
-use App\View\Composers\PageSettingsComposer;
-use App\Http\Controllers\PageSettingsController;
-use App\Models\PageSettings;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,7 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Paginator::useBootstrapFive();
-        View::composer('*', PageSettingsComposer::class);
+        //
     }
 }
