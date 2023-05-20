@@ -21,21 +21,21 @@ class UsersTableSeeder extends Seeder
         \App\Models\User::factory()->create([
             'name' => 'Diak Egy',
             'ncode' => "1kaid",
-            'email' => 'diak1@email.com',
+            'email' => 'diak1@gmail.com',
             'rank_id' => 0,
         ]);
         \App\Models\User::factory()->create([
-            'name' => 'Diak Ketto',
+            'name' => 'Tanár',
             'ncode' => "eeergs",
-            'email' => 'diak2@gmail.com',
-            'rank_id' => 0,
+            'email' => 'tanar@gmail.com',
+            'rank_id' => 1,
         ]);
 
         \App\Models\User::factory()->create([
             'name' => 'Admin Boi',
             'ncode' => "aaddmin",
             'email' => 'admin@admin.com',
-            'rank_id' => 3,
+            'rank_id' => 2,
         ]);
         \App\Models\User::factory()->create([
             'name' => 'Tajti Tibor',
