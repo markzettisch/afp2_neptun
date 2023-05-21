@@ -68,8 +68,12 @@
                             <td style="font-family: 'JetBrains Mono', monospace;">{{ $mark->hallgato }}</td>
                             <td><input class="form-control-sm" type="number" style="width: 30%;" min="1" max="5" step="1" value="{{$mark->mark}}" name="mark"></td>
                             <td><button class="btn btn-primary btn-sm" type="submit" value="{{ __("Edit") }}" style="background: rgb(15,112,177);font-family: 'JetBrains Mono', monospace;">Módosítás</button></td>
-                            <td><button class="btn btn-primary btn-sm" type="submit" value="{{ __("Destroy") }}" style="background:red;font-family: 'JetBrains Mono', monospace;">Törlés</button></td>
+                        </form>
+                            <form action="{{ route("admin.marks.destroy") }}" method="post">
+                                @csrf
+                            <td><button class="btn btn-primary btn-sm" type="submit" name="deletebutton"  id="deletebutton" value="{{$mark->id}}" style="background:red;font-family: 'JetBrains Mono', monospace;">Törlés</button></td>
                             </tr>
+                            </form>
                             @endforeach
                     </tbody>
                 </table>

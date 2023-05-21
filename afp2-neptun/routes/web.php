@@ -104,7 +104,7 @@ Route::post('/admin/subjects', [SubjectController::class,'create'])->name("mysub
 Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update"])->name("admin.subject.edit");
 
 Route::post("/teacher/marks/update/{marks}", [MarkController::class,"update"])->name("admin.marks.edit");
-Route::post("/teacher/marks/destroy/{marks}", [MarkController::class,"destroy"])->name("admin.marks.destroy");
+Route::post("/teacher/marks/destroy", [MarkController::class,"destroy"])->name("admin.marks.destroy");
 
 
 

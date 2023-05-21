@@ -19,10 +19,6 @@ class MarkController extends Controller
      */
     public function index()
     {
-        if (auth()->user()->rank_id != 0) {
-            return redirect("/");
-        }
-
         $marks = marks::all();
         return view('mainpage.marksstudents')->with(compact("marks"));
     }
@@ -107,23 +103,19 @@ class MarkController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(marks $marks)
+    public function destroy(Request $request)
     {
-        $marks = Post::findOrFail($marks);
-        $marks->delete();
-        return view('mainpage.marksteacher')->with(compact("marks","subjects"));
-    
-        
+       
+        $id = $request["deletebutton"];      
+        marks::destroy($id);       
+        return redirect()->back();
     }
     
     public function showMarksandSubjects()
     {
-        if (auth()->user()->rank_id != 1) {
-            return redirect("/");
-        }
-
         $marks = marks::all();
         $subjects = Subject::all();
+        
         
         return view('mainpage.marksteacher')->with(compact("marks", "subjects")); // ?????? 
         
