@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\marks;
 use App\Models\Subject;
+use App\Models\Students;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -115,9 +116,9 @@ class MarkController extends Controller
     {
         $marks = marks::all();
         $subjects = Subject::all();
-        
-        
-        return view('mainpage.marksteacher')->with(compact("marks", "subjects")); // ?????? 
+        $students = Subject::all();
+
+        return view('mainpage.marksteacher')->with(compact("marks", "subjects", "students")); // ?????? 
         
         //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
 

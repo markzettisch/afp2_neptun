@@ -28,15 +28,9 @@
             </div>
             <div class="col-xl-3 offset-xl-0 d-flex d-xl-flex flex-column justify-content-xl-start justify-content-xxl-center align-items-xxl-center" style="margin-top: 2vw;">
                 <h3 style="font-family: 'JetBrains Mono', monospace;">Hallgató</h3><select class="form-select-lg" name="student_id">
-                    <optgroup label="Tantárgy1">
-                        <option value="2" selected="">Kiss Sándor</option>
-                        <option value="3" selected="">Péter Árpád</option>
-                    </optgroup>
-                    <optgroup label="Alkalmazások Fejlesztése és projektlabor II:">
-                        <option value="3">Kiss Barnabás</option>
-                        <option value="4">Farkas Lajos</option>
-                        <option value="5">Göröcs Lajos Zsolt</option>
-                    </optgroup>
+                @foreach($students as $student)
+                        <option value="{{ $student->name }}" selected="">{{ $student->name }}</option>
+                @endforeach
                 </select>
             </div>
             <div class="col-xl-1 col-xxl-2 d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center align-items-xxl-start" style="margin-top: 2vw;">
