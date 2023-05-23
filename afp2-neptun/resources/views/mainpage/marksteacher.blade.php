@@ -29,7 +29,7 @@
             <div class="col-xl-3 offset-xl-0 d-flex d-xl-flex flex-column justify-content-xl-start justify-content-xxl-center align-items-xxl-center" style="margin-top: 2vw;">
                 <h3 style="font-family: 'JetBrains Mono', monospace;">Hallgató</h3><select class="form-select-lg" name="student_id">
                 @foreach($students as $student)
-                        <option value="{{ $student->name }}" selected="">{{ $student->name }}</option>
+                        <option value="{{ $student->id }}" selected="">{{ $student->name }}</option>
                 @endforeach
                 </select>
             </div>

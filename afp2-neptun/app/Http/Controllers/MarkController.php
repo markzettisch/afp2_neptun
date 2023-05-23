@@ -24,7 +24,9 @@ class MarkController extends Controller
         if (auth()->user()->rank_id != 0){
             return redirect("/");
         }
-        $marks = marks::all();
+
+        $user_id = auth()->user()->id;
+        $marks = marks::all()->where("user_id", "=", $user_id);
         return view('mainpage.marksstudents')->with(compact("marks"));
     }
 
@@ -56,11 +58,11 @@ class MarkController extends Controller
         if($this->error == 0)
         {
             DB::table('marks')->insert([
-                'user_id' => 1, // Ezt majd cserélni kell.
+                'user_id' => $this->hallgato,
                 'name' => $this->name,
                 'created_at' => now(),
                 'updated_at' => now(),
-                'hallgato' => $this->hallgato,
+                'hallgato' => User::where("id", "=", $this->hallgato)->first()->name,
                 'mark' => $this->mark,
             ]);
         }
