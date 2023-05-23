@@ -100,8 +100,8 @@ Route::get('/admin/marks', function () {
 })->middleware(['auth', 'verified'])->name('main');
 
 
-Route::get("/admin/subjects", [SubjectController::class,"showSubjects"])->name("admin.subjects");
-Route::post('/admin/subjects', [SubjectController::class,'create'])->name("mysubjects");
+Route::get("/admin/subjects", [SubjectController::class,"showSubjects"])->middleware(['auth', 'verified'])->name('main')->name("admin.subjects");
+Route::post('/admin/subjects', [SubjectController::class,'create'])->middleware(['auth', 'verified'])->name('main')->name("mysubjects");
 Route::post("/admin/subject/update/{subject}", [SubjectController::class,"update"])->name("admin.subject.edit");
 
 Route::post("/teacher/marks/update/{marks}", [MarkController::class,"update"])->name("admin.marks.edit");

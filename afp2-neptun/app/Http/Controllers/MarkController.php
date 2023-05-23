@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\marks;
 use App\Models\Subject;
 use App\Models\Students;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -101,7 +102,7 @@ class MarkController extends Controller
         $marks->save();
         $marks = marks::all();
         $subjects = Subject::all();
-        return view('mainpage.marksteacher')->with(compact("marks","subjects"));
+        return redirect('teacher/marks')->with(compact("marks","subjects"));
     }
 
     /**
@@ -122,7 +123,7 @@ class MarkController extends Controller
         }
         $marks = marks::all();
         $subjects = Subject::all();
-        $students = Subject::all();
+        $students = User::all()->where("rank_id", "=", 0);
 
         return view('mainpage.marksteacher')->with(compact("marks", "subjects", "students")); // ?????? 
         

@@ -41,9 +41,9 @@
                                     style="width: 100%;margin-bottom: 1vw;" placeholder="{{ __("Name") }}" required>
                                     <input
                                     class="border rounded form-control form-control-lg" name="description" type="text" style="width: 100%; margin-bottom: 1vw;" placeholder="{{ __("Desc") }}">
-                                    <input class="border rounded form-control form-control-lg d-xxl-flex" name="suggested_semester" type="number"
+                                    <input class="border rounded form-control form-control-lg d-xxl-flex" min="1" step="1" name="suggested_semester" type="number"
                                     style="width: 100%;margin-bottom: 1vw;" placeholder="{{ __("Suggested semester") }}" required>
-                                    <input class="border rounded form-control form-control-lg d-xxl-flex" name="credit" type="number"
+                                    <input class="border rounded form-control form-control-lg d-xxl-flex" min="1" step="1"name="credit" type="number"
                                     style="width: 100%;margin-bottom: 1vw;" placeholder="{{ __("Credit") }}" required>
                             </div>
                         </div>

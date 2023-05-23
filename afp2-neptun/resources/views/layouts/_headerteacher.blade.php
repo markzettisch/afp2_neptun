@@ -5,9 +5,11 @@
                 <li class="nav-item"><a class="nav-link" href="{{ url("teacher/marks") }}" style="font-family: 'JetBrains Mono', monospace;color: rgb(255,255,255);">Jegyek</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url("teacher/missing") }}" style="font-family: 'JetBrains Mono', monospace;color: rgb(255,255,255);">Hiányzások</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url("teacher/mysubjects") }}" style="font-family: 'JetBrains Mono', monospace;color: rgb(255,255,255);">Tantárgyak</a></li>
-                <li class="nav-item"><form method="POST" action="{{ route('logout') }}">
-                @csrf
-                <button class="nav-link" style="font-family: 'JetBrains Mono', monospace;">Kijelentkezés</button></li>
+                <li class="nav-item">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button class="nav-link" style="font-family: 'JetBrains Mono', monospace;">Kijelentkezés</button></li>
+                    </form>
             </ul>
         </div>
     </div>
