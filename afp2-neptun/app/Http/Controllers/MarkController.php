@@ -117,7 +117,7 @@ class MarkController extends Controller
     
     public function showMarksandSubjects()
     {
-        if (auth()->user()->rank_id != 1){
+        if (auth()->user()->rank_id <= 1){
             return redirect("/");
         }
         $marks = marks::all();

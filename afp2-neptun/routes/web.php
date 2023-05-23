@@ -73,7 +73,7 @@ Route::get('/teacher/marks', function () {
 
 Route::get('/teacher/missing', function () {
 
-    if (Auth::user()->rank_id == 1 ) {
+    if (Auth::user()->rank_id <= 1 ) {
         return view('mainpage.teachermissing');
     }
 
