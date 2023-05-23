@@ -30,14 +30,22 @@ class SubjectController extends Controller
 
     public function indexteacher()
     {
-        if (auth()->user()->rank_id != 1) {
+        if (auth()->user()->rank_id < 1) {
             return redirect("/");
         }
 
         $subjects = Subject::all();
 
+        if (auth()->user()->rank_id == 1) {
+            return view('mainpage.subjectsteacher')->with(compact("subjects"));
+        }
+
+        if (auth()->user()->rank_id == 2) {
+            return view('admin.checkAll')->with(compact("subjects"));
+        }
+
         //$subjects = Subject::query()->where("name","like","%AFP1%")->get();
-        return view('mainpage.subjectsteacher')->with(compact("subjects"));
+        return redirect("/");
     }
 
     /**

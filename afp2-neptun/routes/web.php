@@ -73,7 +73,7 @@ Route::get('/teacher/marks', function () {
 
 Route::get('/teacher/missing', function () {
 
-    if (Auth::user()->rank_id <= 1 ) {
+    if (Auth::user()->rank_id == 1 ) {
         return view('mainpage.teachermissing');
     }
 
@@ -98,6 +98,7 @@ Route::get('/admin/marks', function () {
 
     return redirect('/');
 })->middleware(['auth', 'verified'])->name('main');
+
 
 Route::get("/admin/subjects", [SubjectController::class,"showSubjects"])->name("admin.subjects");
 Route::post('/admin/subjects', [SubjectController::class,'create'])->name("mysubjects");
